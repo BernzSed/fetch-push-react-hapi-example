@@ -1,0 +1,48 @@
+{
+  "name": "fetch-push-react-express-example",
+  "version": "0.0.1",
+  "description": "An example of how to use fetch-push in a react app",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm run build:dev; npm run serve",
+    "clean": "rm -rf assets/bundle.js",
+    "serve": "nodemon --expose-http2 .",
+    "debug": "node inspect --expose-http2 .",
+    "build:dev": "NODE_ENV=development webpack --progress --color -p --config webpack.config.js",
+    "build:prod": "NODE_ENV=production webpack --progress --color -p --config webpack.config.js"
+  },
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "keywords": [
+    "fetch",
+    "push",
+    "push_promise",
+    "react"
+  ],
+  "author": "Bernie Stern <bernzs@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "fetch-push": "file:../fetch-push",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.9.0",
+    "eslint-plugin-react": "^7.4.0",
+    "nodemon": "^1.12.1",
+    "webpack": "^3.7.1"
+  }
+}
