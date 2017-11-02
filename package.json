@@ -1,5 +1,5 @@
 {
-  "name": "fetch-push-react-express-example",
+  "name": "fetch-push-react-hapi-example",
   "version": "0.0.1",
   "description": "An example of how to use fetch-push in a react app",
   "private": true,
@@ -24,8 +24,8 @@
   "author": "Bernie Stern <bernzs@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.2",
     "fetch-push": "file:../fetch-push",
+    "hapi": "^17.0.0-rc9",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
